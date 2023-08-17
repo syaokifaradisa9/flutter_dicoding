@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111972287579",
+    "project_id": "submission-flutter-pemula",
+    "storage_bucket": "submission-flutter-pemula.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111972287579:android:8cbf38e4482aa33287ab7e",
+        "android_client_info": {
+          "package_name": "com.syaokifaradisa09.id.submission"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111972287579-cu9gvd4lk27emkp5v0qhb9bmo9crsltm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv32ubNkt2fIruMGuenx2CQnpikPguccU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111972287579-cu9gvd4lk27emkp5v0qhb9bmo9crsltm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
