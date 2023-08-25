@@ -8,7 +8,6 @@ import 'package:movies/movies.dart';
 import 'package:provider/provider.dart';
 import 'package:ditonton/injection.dart' as di;
 import 'package:tvseries/tvseries.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'firebase_options.dart';
 
 void main() async{
@@ -17,7 +16,6 @@ void main() async{
     options: DefaultFirebaseOptions.currentPlatform,
   );
   di.init();
-  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
   runApp(MyApp());
 }
 

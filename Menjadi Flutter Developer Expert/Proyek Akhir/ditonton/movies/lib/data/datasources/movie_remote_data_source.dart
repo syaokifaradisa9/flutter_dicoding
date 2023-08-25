@@ -23,6 +23,13 @@ class MovieRemoteDataSourceImpl implements MovieRemoteDataSource {
 
   MovieRemoteDataSourceImpl({required this.client});
 
+  Future<SecurityContext> get globalContext async {
+    final sslCert = await rootBundle.load('certificates/certificates.cer');
+    SecurityContext securityContext = SecurityContext(withTrustedRoots: false);
+    securityContext.setTrustedCertificatesBytes(sslCert.buffer.asInt8List());
+    return securityContext;
+  }
+
   @override
   Future<List<MovieModel>> getNowPlayingMovies() async {
     final response =
